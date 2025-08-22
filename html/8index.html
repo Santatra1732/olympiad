@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — clair</title>
+  <link rel="stylesheet" href="8style.css">
+</head>
+<body>
+  <!-- Login Page -->
+  <div id="login-page" class="page hidden">
+    <div class="login-container">
+      <button id="back-btn" class="back-btn" aria-label="Retour" onclick="window.location.href='2index.html'">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="m12 19-7-7 7-7"/>
+          <path d="M19 12H5"/>
+        </svg>
+      </button>
+
+      <div class="login-content">
+        <!-- Logo and title -->
+        <div class="login-header">
+          <div class="login-logo">
+            <div class="login-logo-inner"></div>
+          </div>
+          <h1 class="login-title">INSEREOO</h1>
+        </div>
+
+        <!-- Form -->
+        <form id="login-form" class="login-form">
+          <div class="input-group">
+            <input type="text" placeholder="Nom..." required>
+            <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+
+          <div class="input-group">
+            <input type="text" placeholder="Prénom..." required>
+            <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+
+          <div class="input-group">
+            <input type="email" id="email" placeholder="Votre adresse email..." required>
+            <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+
+          <div class="input-group">
+            <input type="password" id="password" placeholder="Mot de passe..." required>
+            <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <circle cx="12" cy="16" r="1"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+
+          <div class="input-group">
+            <input type="password" id="password" placeholder="Confirme votr mot de passe..." required>
+            <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <circle cx="12" cy="16" r="1"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+
+          <button type="submit" class="login-btn">S'inscrire</button>
+        </form>
+        <button class="social-btn google-btn">
+            <div class="social-icon google-icon"><img src="Google.png" alt="Pix" width="30"></div>
+            Continue avec Google
+        </button>
+        
+        <button class="social-btn facebook-btn">
+            <div class="social-icon facebook-icon"><img src="Facebook.png" alt="Pix" width="30"></div>
+            Continue avec Facebook
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Unhide the page on load -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var page = document.getElementById('login-page');
+      if (page) page.classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>

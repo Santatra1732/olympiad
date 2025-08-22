@@ -1,0 +1,377 @@
+/* 6style.css — Light theme for Careers & Profile Page */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --bg: #f9fafb;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --brand: #22c55e;
+  --brand-dark: #15803d;
+  --border: #e5e7eb;
+  --shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+/* ==== GENERAL PAGE WRAPPER ==== */
+.page {
+  width: 100%;
+}
+
+/* ==== HEADER ==== */
+.careers-header {
+  position: sticky;
+  top: 0;
+  background: #ffffffcc;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  z-index: 10;
+}
+
+.careers-header-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.15);
+}
+
+.logo-inner {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.expanded-nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  background: #f3f4f6;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+  background: var(--brand);
+  color: #fff;
+}
+
+/* ==== CAREERS PAGE ==== */
+.careers-main {
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.careers-content {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.careers-title-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.careers-main-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.careers-nav-arrow {
+  background: #f3f4f6;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+
+.careers-nav-arrow:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
+.careers-display-area {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  flex: 1;
+}
+
+.careers-header-box h3,
+.careers-descriptions-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.careers-content-area {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.career-item {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #f3f4f6;
+  cursor: pointer;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.career-item:hover {
+  background: #ecfdf5;
+  transform: translateY(-2px);
+}
+
+.career-item.active {
+  border: 2px solid var(--brand);
+  background: #ecfdf5;
+}
+
+.career-item h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.career-item p {
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.career-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  font-size: 13px;
+  background: var(--brand);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+/* ==== PROFILE PAGE ==== */
+.profile-back-container {
+  padding: 16px;
+}
+
+.profile-back-btn {
+  background: #f3f4f6;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+
+.profile-back-btn:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
+.profile-main {
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.profile-content {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.profile-description h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.profile-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.profile-forms {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.profile-form-section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.form-section-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.form-progress-area {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.progress-pattern {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ecfdf5, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-dots {
+  width: 20px;
+  height: 20px;
+  background: var(--brand);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.progress-info {
+  flex: 1;
+}
+
+.progress-info p {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #f3f4f6;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--brand);
+  border-radius: 6px;
+}
+
+.progress-text {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.profile-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.profile-action-btn {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.profile-action-btn.primary {
+  background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.profile-action-btn.secondary {
+  background: #f3f4f6;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.profile-action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(34,197,94,.2);
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .careers-main-area {
+    flex-direction: column;
+  }
+  .careers-nav-arrow {
+    order: -1;
+  }
+  .form-progress-area {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

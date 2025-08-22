@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Description_PIX</title>
+  <link rel="stylesheet" href="2style.css">
+</head>
+<body>
+  <!-- Login Page -->
+  <div id="login-page" class="page hidden">
+    <div class="login-container">
+      <button id="back-btn" class="back-btn" aria-label="Retour" onclick="window.location.href='3index.html'">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="m12 19-7-7 7-7"/>
+          <path d="M19 12H5"/>
+        </svg>
+      </button>
+
+      <div class="login-content">
+        <!-- Logo and title -->
+        <div class="login-header">
+          <div class="login-logo">
+            <div class="login-logo-inner"></div>
+          </div>
+          <h1 class="login-title">Test d’orientation ONISEP</h1>
+          <h2 class="login-title">Marre de scroller sans savoir où tu vas ?</h2>
+        </div>
+
+        <!-- Form -->
+        <form id="login-form" class="login-form">
+          <div class="login-help-text">
+            <p>
+                Le test ONISEP 
+                est un outil officiel et gratuit du service public
+                français. Il analyse tes intérêts et compétences 
+                pour te proposer des métiers et formations
+                dans le numérique. Avec en , 
+                un accès direct à des infos fiables sur 
+                les formations et débouchés. Résultat :
+                tu passes de “je ne sais pas” à “je sais où je vais”.
+            </p>
+          </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Unhide the page on load -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var page = document.getElementById('login-page');
+      if (page) page.classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>

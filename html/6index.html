@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="6style.css">
+</head>
+<body>
+        <!-- Careers Page -->
+    <div id="careers-page" class="page hidden">
+        <!-- Expanded Header with full navigation -->
+        <header class="careers-header">
+            <div class="careers-header-content">
+                <div class="logo-section">
+                    <div class="logo-circle">
+                        <div class="logo-inner"></div>
+                    </div>
+                    <h1 class="logo-text">ISEREOO</h1>
+                </div>
+                <nav class="expanded-nav">
+                    <button class="nav-btn" id="careers-nav-accueil">Accueil</button>
+                    <button class="nav-btn" id="careers-nav-tests">Tests</button>
+                    <button class="nav-btn active">Métiers</button>
+                    <button class="nav-btn" id="careers-nav-offres">Offres</button>
+                    <button class="nav-btn" id="careers-nav-apprendre">Apprendre</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Careers Content -->
+        <main class="careers-main">
+            <div class="careers-content">
+                <!-- Title section -->
+                <div class="careers-title-section">
+                    <h2 class="careers-main-title">Voici les métiers existant et leurs descriptions</h2>
+                </div>
+
+                <!-- Main careers area -->
+                <div class="careers-main-area">
+                    <button class="careers-nav-arrow left" id="careers-prev">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <path d="m15 18-6-6 6-6"/>
+                        </svg>
+                    </button>
+
+                    <div class="careers-display-area">
+                        <div class="careers-header-box">
+                            <h3>Métiers</h3>
+                        </div>
+                        
+                        <div class="careers-content-area">
+                            <div class="career-item active" data-career="tech">
+                                <h4>Développeur Web</h4>
+                                <p>Créez des sites web et applications interactives en utilisant les dernières technologies.</p>
+                                <div class="career-skills">
+                                    <span class="skill-tag">HTML/CSS</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">React</span>
+                                </div>
+                            </div>
+                            
+                            <div class="career-item" data-career="design">
+                                <h4>Designer UX/UI</h4>
+                                <p>Concevez des expériences utilisateur intuitives et des interfaces visuellement attrayantes.</p>
+                                <div class="career-skills">
+                                    <span class="skill-tag">Figma</span>
+                                    <span class="skill-tag">Photoshop</span>
+                                    <span class="skill-tag">Prototypage</span>
+                                </div>
+                            </div>
+                            
+                            <div class="career-item" data-career="marketing">
+                                <h4>Marketing Digital</h4>
+                                <p>Développez des stratégies marketing innovantes pour promouvoir les marques en ligne.</p>
+                                <div class="career-skills">
+                                    <span class="skill-tag">SEO</span>
+                                    <span class="skill-tag">Analytics</span>
+                                    <span class="skill-tag">Social Media</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="careers-descriptions-box">
+                            <h3>Descriptions</h3>
+                        </div>
+                    </div>
+
+                    <button class="careers-nav-arrow right" id="careers-next">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <path d="m9 18 6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Profile Page -->
+    <div id="profile-page" class="page hidden">
+        <!-- Back button -->
+        <div class="profile-back-container">
+            <button id="profile-back-btn" class="profile-back-btn">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="m12 19-7-7 7-7"/>
+                    <path d="M19 12H5"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Main Profile Content -->
+        <main class="profile-main">
+            <div class="profile-content">
+                <!-- Description section -->
+                <div class="profile-description">
+                    <h2>Description</h2>
+                    <p>Découvrez votre profil personnalisé basé sur vos résultats aux tests de compétences et d'orientations. Votre parcours unique vous guide vers les meilleures opportunités.</p>
+                </div>
+
+                <!-- Form sections container -->
+                <div class="profile-forms">
+                    <!-- Formulaire test des compétences -->
+                    <section class="profile-form-section">
+                        <h3 class="form-section-title">Formulaire test des compétences</h3>
+                        <div class="form-progress-area">
+                            <div class="progress-pattern">
+                                <div class="progress-dots"></div>
+                            </div>
+                            <div class="progress-info">
+                                <p>Compétences évaluées : Communication, Résolution de problèmes, Créativité</p>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                                <span class="progress-text">75% complété</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Formulaire test d'orientations -->
+                    <section class="profile-form-section">
+                        <h3 class="form-section-title">Formulaire test d'orientations</h3>
+                        <div class="form-progress-area">
+                            <div class="progress-pattern">
+                                <div class="progress-dots"></div>
+                            </div>
+                            <div class="progress-info">
+                                <p>Orientations explorées : Technologie, Sciences, Arts, Commerce</p>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 60%"></div>
+                                </div>
+                                <span class="progress-text">60% complété</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Profile actions -->
+                <div class="profile-actions">
+                    <button class="profile-action-btn primary">Continuer les tests</button>
+                    <button class="profile-action-btn secondary">Télécharger le rapport</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

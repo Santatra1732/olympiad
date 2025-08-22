@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="3style.css">
+</head>
+<body>
+    <!-- Dashboard Page -->
+    <div id="dashboard-page" class="page hidden">
+        <!-- Header with navigation -->
+        <header class="dashboard-header">
+            <div class="dashboard-header-content">
+                <div class="logo-section">
+                    <div class="logo-circle">
+                        <div class="logo-inner"></div>
+                    </div>
+                    <h1 class="logo-text">INSEREOO</h1>
+                </div>
+                <nav class="nav-buttons">
+                    <button id="home-btn" class="nav-btn" onclick="window.location.href='1index.html'">
+                        Accueil</button>
+                    <button id="connection-btn" class="nav-btn" onclick="window.location.href='2index.html'">
+                        Connexion</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Dashboard Content -->
+        <main class="dashboard-main">
+            <div class="dashboard-content">
+                <!-- Added welcome section with dynamic content -->
+                <div class="dashboard-welcome">
+                    <h2>Bienvenue sur votre tableau de bord</h2>
+                    <p>Commencez votre parcours de découverte professionnelle en passant nos tests personnalisés.</p>
+                    <p>Chaque évaluation vous rapproche de votre carrière idéale.</p>
+                </div>
+
+                <!-- Test sections container -->
+                <div class="test-sections">
+                    <!-- Test des compétences -->
+                    <section class="test-section">
+                        <h2 class="section-title">Test des compétences</h2>
+                        <div class="test-cards">
+                            <div class="test-card">
+                                <div class="card-description" onclick="window.location.href='9index.html'">
+                                    <img src="image 1.png" alt="Pix" width="150">
+                                    <span>Évaluez vos compétences numériques</span>
+                                    <strong>PIX</strong>
+                                </div>
+                            </div>
+                            <div class="test-card">
+                                <div class="card-description" onclick="window.location.href='10index.html'">
+                                    <img src="123Test.png" alt="Pix" width="150">
+                                    <span>Test de personnalité professionnel</span>
+                                    <strong>123Test</strong>
+                                </div>
+                            </div>
+                            <div class="test-card">
+                                <div class="card-description" onclick="window.location.href='11index.html'">
+                                    <img src="Central test.png" alt="Pix" width="150">
+                                    <span>Analyse comportementale</span>
+                                    <strong>Central Test</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Test d'orientations -->
+                    <section class="test-section">
+                        <h2 class="section-title">Test d'orientations</h2>
+                        <div class="test-cards">
+                            <div class="test-card">
+                                <div class="card-description" onclick="window.location.href='12index.html'">
+                                    <img src="image 4.png" alt="Pix" width="150">
+                                    <span>Découvrez vos intérêts professionnels</span>
+                                    <strong>RIASEC</strong>
+                                </div>
+                            </div>
+                            <div class="test-card">
+                                <div class="card-description" onclick="window.location.href='13index.html'">
+                                    <img src="ONISEP 1.png" alt="Pix" width="150">
+                                    <span>Orientation scolaire et professionnelle</span>
+                                    <strong>ONISEP</strong>
+                                </div>
+                            </div>
+                            <div class="test-card">
+                                <div class="card-description" onclick="window.location.href='14index.html'">
+                                    <img src="CIDJ.png" alt="Pix" width="150">
+                                    <span>Information jeunesse et métiers</span>
+                                    <strong>CIDJ</strong>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Start button -->
+                <div class="start-button-container">
+                    <button id="start-btn" class="start-btn" onclick="window.location.href='2index.html'">
+                        Commencer
+                        <span class="arrow">→</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

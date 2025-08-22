@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Description_PIX</title>
+  <link rel="stylesheet" href="2style.css">
+</head>
+<body>
+  <!-- Login Page -->
+  <div id="login-page" class="page hidden">
+    <div class="login-container">
+      <button id="back-btn" class="back-btn" aria-label="Retour" onclick="window.location.href='3index.html'">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="m12 19-7-7 7-7"/>
+          <path d="M19 12H5"/>
+        </svg>
+      </button>
+
+      <div class="login-content">
+        <!-- Logo and title -->
+        <div class="login-header">
+          <div class="login-logo">
+            <div class="login-logo-inner"></div>
+          </div>
+          <h1 class="login-title">Test de compétence 123Test</h1>
+            <h2 class="login-title">Prêt a savoir  ton profil caché ?</h2>
+        </div>
+
+        <!-- Form -->
+        <form id="login-form" class="login-form">
+          <div class="login-help-text">
+            <p>123 Test 
+                est un site qui propose gratuitement différents 
+                tests comme des questionnaires de personnalité,
+                intellectuel (QI), permettant à chacun 
+                de mieux se connaître et de prendre 
+                des décisions plus éclairées 
+                pour son avenir personnel 
+                ou professionnel.
+
+
+            </p>
+          </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Unhide the page on load -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var page = document.getElementById('login-page');
+      if (page) page.classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
