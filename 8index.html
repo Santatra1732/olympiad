@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — clair</title>
+  <link rel="stylesheet" href="8style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <!-- Login Page -->
+  
+      <div class="signup-container">
+        <button class="back-button" onclick="window.location.href='2index.html'">
+            <i class='bx bx-left-arrow-alt'></i>
+        </button>
+        
+        <div class="logo-section">
+           <img src="images/ilogo.png" alt="logo" class="login-logo-inner">
+           <div class="logo-text">insere<span>oo</span></div>
+        </div>
+
+        <form class="form-container" onsubmit="handleSignup(event)">
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    class="input-field" 
+                    placeholder="Nom..." 
+                    id="lastName"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    class="input-field" 
+                    placeholder="Prénom..." 
+                    id="firstName"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <input 
+                    type="password" 
+                    class="input-field" 
+                    placeholder="Mot de passe..." 
+                    id="password"
+                    required
+                >
+                <button type="button" class="toggle-password" onclick="togglePassword('password')">👁</button>
+            </div>
+
+            <div class="input-group">
+                <input 
+                    type="password" 
+                    class="input-field" 
+                    placeholder="Confirme mot de passe..." 
+                    id="confirmPassword"
+                    required
+                >
+                <button type="button" class="toggle-password" onclick="togglePassword('confirmPassword')">👁</button>
+            </div>
+
+            <button type="submit" class="signup-btn">S'inscrire</button>
+        </form>
+
+        <div class="divider">
+            <span>ou</span>
+        </div>
+
+        <div class="social-buttons">
+            <button class="social-btn" onclick="signupWithGoogle()">
+                <div class="google-icon"></div>
+                Continue avec Google
+            </button>
+            
+            <button class="social-btn" onclick="signupWithFacebook()">
+                <div class="facebook-icon"></div>
+                Continue avec Facebook
+            </button>
+        </div>
+
+        <div class="login-link">
+            Déjà un compte ? <a href="#" onclick="goToLogin()">Se connecter</a>
+        </div>
+    </div>
+      
+    
+
+  <!-- Unhide the page on load -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var page = document.getElementById('login-page');
+      if (page) page.classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>

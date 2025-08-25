@@ -1,15 +1,12 @@
-/* 3style.css — Light theme for Dashboard Page */
-
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --bg: #f9fafb;
   --card: #ffffff;
   --text: #1f2937;
   --muted: #6b7280;
-  --brand: #87ceeb;
-  --brand-dark: #15803d;
+  --brand: #3b82f6;     /* Changé de #22c55e (vert) à #3b82f6 (bleu) */
+  --brand-dark: #1d4ed8; /* Changé de #15803d (vert foncé) à #1d4ed8 (bleu foncé) */
   --border: #e5e7eb;
   --shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
@@ -36,7 +33,7 @@ body {
 .dashboard-header {
   position: sticky;
   top: 0;
-  background: #ffffffcc;
+  background: #03121F;
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
   z-index: 10;
@@ -56,31 +53,30 @@ body {
 .logo-section {
   display: flex;
   align-items: center;
-  gap: 10px;
+   margin: 0 10px;
 }
 
-.logo-circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, #22c55e, #16a34a);
-  box-shadow: inset 0 0 8px rgba(0,0,0,0.15);
-}
-
-.logo-inner {
-  width: 18px;
-  height: 18px;
-  border-radius: 4px;
-  background: #fff;
-}
+ .logo-inner {
+            width: 20px;
+            height: 50px;
+        }
 
 .logo-text {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--text);
-}
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #4facfe;
+            text-transform: lowercase;
+            letter-spacing: 1px;
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        .logo-text span {
+            color: #ff9500;
+        }
+
+
+
 
 /* Nav buttons */
 .nav-buttons {
@@ -100,7 +96,7 @@ body {
 }
 
 .nav-btn:hover {
-  background: var(--brand);
+  background: #03121f;
   color: #fff;
 }
 
@@ -148,7 +144,7 @@ body {
   margin: 20px auto 0;
   font-weight: 600;
   color: var(--text);
-  background: var(--brand);
+  background: #3b82f6;
   color: #fff;
   font-weight: 600;
   border: none;
@@ -231,7 +227,7 @@ body {
 }
 
 .start-btn {
-  background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+  background: linear-gradient(135deg, #ff9500 0%, #ffb347 100%);
   color: #fff;
   font-size: 18px;
   font-weight: 600;
@@ -239,7 +235,7 @@ body {
   border-radius: 10px;
   padding: 14px 24px;
   cursor: pointer;
-  box-shadow: var(--shadow);
+  box-shadow: #ff9500;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -248,7 +244,7 @@ body {
 
 .start-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(34,197,94,.3);
+  box-shadow: #ff9500;
 }
 
 .start-btn .arrow {

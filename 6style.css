@@ -147,12 +147,17 @@ body {
 }
 
 .careers-display-area {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  box-shadow: var(--shadow);
-  padding: 20px;
   flex: 1;
+  max-width: 800px;
+  background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border: 3px solid #374151;
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
 }
 
 .careers-header-box h3,
@@ -163,18 +168,23 @@ body {
 }
 
 .careers-content-area {
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  position: relative;
 }
 
 .career-item {
-  padding: 16px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  background: #f3f4f6;
-  cursor: pointer;
-  transition: background .2s ease, transform .2s ease;
+  display: none;
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #667eea;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .career-item:hover {
@@ -185,6 +195,7 @@ body {
 .career-item.active {
   border: 2px solid var(--brand);
   background: #ecfdf5;
+  display: block;
 }
 
 .career-item h4 {
