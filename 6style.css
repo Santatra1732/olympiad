@@ -8,7 +8,7 @@
   --card: #ffffff;
   --text: #1f2937;
   --muted: #6b7280;
-  --brand: #22c55e;
+  --brand: #33769c;
   --brand-dark: #15803d;
   --border: #e5e7eb;
   --shadow: 0 8px 20px rgba(0,0,0,0.08);
@@ -56,24 +56,15 @@ body {
 .logo-section {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1px;
 }
 
-.logo-circle {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, #22c55e, #16a34a);
-  box-shadow: inset 0 0 8px rgba(0,0,0,0.15);
-}
+
 
 .logo-inner {
   width: 18px;
   height: 18px;
-  border-radius: 4px;
-  background: #fff;
+  
 }
 
 .logo-text {
@@ -121,8 +112,20 @@ body {
 }
 
 .careers-title-section h2 {
-  font-size: 24px;
+  font-size: 20px;
+  justify-content: center;
+  width: 600px;
+  text-align: center;
+  margin: 30px auto 0;
   font-weight: 600;
+  color: var(--text);
+  background: #3b82f6;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 20px
 }
 
 .careers-main-area {
@@ -385,4 +388,107 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+.io{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(255, 149, 0, 0.4);
+  background: linear-gradient(135deg, #e6850e 0%, #ff9500 100%);
+  width: 200px;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: center;
+  text-align: center;
+  margin: 30px auto 0;
+  font-weight: 600;
+  border: none;
+  padding: 10px;
+  border-radius: 20px
+}
+
+footer {
+  background: #0a192f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+footer .socials {
+  margin-bottom: 10px;
+}
+footer .socials a {
+  color: orange;
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.dashboard-header {
+  position: sticky;
+  top: 0;
+  background: #03121F;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  z-index: 10;
+}
+
+.dashboard-header-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* Logo */
+.logo-section {
+  display: flex;
+  align-items: center;
+   margin: 0 10px;
+}
+
+ .logo-inner {
+   width: 20px;
+   height: 50px;
+
+}   
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4facfe;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo-text span {
+  color: #ff9500;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-btn {
+  background: #f3f4f6;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease;
+}
+
+.nav-btn:hover {
+  background: #03121f;
+  color: #fff;
+}
+.nav-btn.active {
+  background: #03121f;  
+  color: #fff;
+  border: 1px solid #fff;
 }

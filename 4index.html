@@ -1,122 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Insereoo - Tests</title>
     <link rel="stylesheet" href="4style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <!-- Tests Page -->
-    <div id="tests-page" class="page hidden">
-        <!-- Expanded Header with full navigation -->
-        <header class="tests-header">
-            <div class="tests-header-content">
+    <header class="dashboard-header">
+            <div class="dashboard-header-content">
                 <div class="logo-section">
                     <div class="logo-circle">
-                        <div class="logo-inner"></div>
+                        <img src="images/ilogo.png" alt="logo" class="logo-inner">
                     </div>
-                    <h1 class="logo-text">INSEREOO</h1>
+                    <h1 class="logo-text">nsere<span>oo</span></h1>
                 </div>
-                <nav class="expanded-nav">
-                    <button class="nav-btn" id="nav-accueil">Accueil</button>
-                    <button class="nav-btn active">Tests</button>
-                    <button class="nav-btn" id="nav-metiers">Métiers</button>
-                    <button class="nav-btn" id="nav-offres">Offres</button>
-                    <button class="nav-btn" id="tests-nav-apprendre">Apprendre</button>
+               <nav class="nav-buttons">
+                    <button id="home-btn" class="nav-btn" onclick="window.location.href='1index.html'">
+                        À propos</button>
+                    <button id="connection-btn" class="nav-btn active">
+                        Tests</button>
+                    <button id="offers-btn" class="nav-btn" onclick="window.location.href='5index.html'">
+                        Offres</button>
+                    <button id="metiers-btn" class="nav-btn" onclick="window.location.href='6index.html'">
+                        Métiers</button>
+                    <button id="resources-btn" class="nav-btn" onclick="window.location.href='7index.html'">
+                        Ressources</button>
                 </nav>
             </div>
-        </header>
+    </header>
 
-        <!-- Main Tests Content -->
-        <main class="tests-main">
-            <div class="tests-content">
-                <!-- Test sections container -->
-                <div class="test-sections">
-                    <!-- Test des compétences -->
-                    <section class="test-section">
-                        <h2 class="section-title">Test des compétences</h2>
-                        <div class="test-cards">
-                            <div class="test-card">
-                                <div class="card-pattern">
-                                    <div class="pattern-dots"></div>
-                                </div>
-                                <button class="play-btn">Jouer</button>
-                                <div class="card-description">
-                                    <span>Description</span>
-                                    <strong>PIX</strong>
-                                </div>
-                            </div>
-                            <div class="test-card">
-                                <div class="card-pattern">
-                                    <div class="pattern-dots"></div>
-                                </div>
-                                <button class="play-btn">Jouer</button>
-                                <div class="card-description">
-                                    <span>Description</span>
-                                    <strong>123Test</strong>
-                                </div>
-                            </div>
-                            <div class="test-card">
-                                <div class="card-pattern">
-                                    <div class="pattern-dots"></div>
-                                </div>
-                                <button class="play-btn">Jouer</button>
-                                <div class="card-description">
-                                    <span>Description</span>
-                                    <strong>Central Test</strong>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Test d'orientations -->
-                    <section class="test-section">
-                        <h2 class="section-title">Test d'orientations</h2>
-                        <div class="test-cards">
-                            <div class="test-card">
-                                <div class="card-pattern">
-                                    <div class="pattern-dots"></div>
-                                </div>
-                                <button class="play-btn">Jouer</button>
-                                <div class="card-description">
-                                    <span>Description</span>
-                                    <strong>RIASEC</strong>
-                                </div>
-                            </div>
-                            <div class="test-card">
-                                <div class="card-pattern">
-                                    <div class="pattern-dots"></div>
-                                </div>
-                                <button class="play-btn">Jouer</button>
-                                <div class="card-description">
-                                    <span>Description</span>
-                                    <strong>ONISEP</strong>
-                                </div>
-                            </div>
-                            <div class="test-card">
-                                <div class="card-pattern">
-                                    <div class="pattern-dots"></div>
-                                </div>
-                                <button class="play-btn">Jouer</button>
-                                <div class="card-description">
-                                    <span>Description</span>
-                                    <strong>CIDJ</strong>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <!-- Profile button -->
-                <div class="profile-button-container">
-                    <button id="profile-btn" class="profile-btn">
-                        Voir votre profil
-                        <span class="arrow">→</span>
-                    </button>
+    <main>
+        <div class="tests-container">
+            <div class="test-section">
+                <h2>Test des compétences</h2>
+                <div class="test-cards">
+                    <div class="test-card">
+                        <div class="test-card-icon pix"></div>
+                        <button class="play-button">Commencer</button>
+                        <div class="test-card-label">PIX</div>
+                    </div>
+                    <div class="test-card">
+                        <div class="test-card-icon test-123"></div>
+                        <button class="play-button">Commencer</button>
+                        <div class="test-card-label">123Test</div>
+                    </div>
+                    <div class="test-card">
+                        <div class="test-card-icon central-test"></div>
+                        <button class="play-button">Commencer</button>
+                        <div class="test-card-label">Central Test</div>
+                    </div>
                 </div>
             </div>
-        </main>
-    </div>
+
+            <div class="test-section">
+                <h2>Test d'orientations</h2>
+                <div class="test-cards">
+                    <div class="test-card">
+                        <div class="test-card-icon riasec"></div>
+                        <button class="play-button">Commencer</button>
+                        <div class="test-card-label">RIASEC</div>
+                    </div>
+                    <div class="test-card">
+                        <div class="test-card-icon onisep"></div>
+                        <button class="play-button">Commencer</button>
+                        <div class="test-card-label">ONISEP</div>
+                    </div>
+                    <div class="test-card">
+                        <div class="test-card-icon cidj"></div>
+                        <button class="play-button">Commencer</button>
+                        <div class="test-card-label">CIDJ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-button-container">
+            <button class="profile-button">Voir votre profil →</button>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><img src="linkedin-icon.png" alt=""><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><img src="facebook-icon.png" alt=""><i class='bx bxl-facebook'></i></a>
+            <a href="#"><img src="email-icon.png" alt=""><i class='bx bxs-envelope' ></i></a>
+        </div>
+        <p>© 2025 INSEREOO — Tous droits réservés | Développé avec passion pour l'orientation des jeunes</p>
+    </footer>
 </body>
 </html>

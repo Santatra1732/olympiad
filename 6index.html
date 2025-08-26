@@ -5,28 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="6style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-        <!-- Careers Page -->
-    <div id="careers-page" class="page hidden">
-        <!-- Expanded Header with full navigation -->
-        <header class="careers-header">
-            <div class="careers-header-content">
+    <header class="dashboard-header">
+            <div class="dashboard-header-content">
                 <div class="logo-section">
                     <div class="logo-circle">
-                        <div class="logo-inner"></div>
+                        <img src="images/ilogo.png" alt="logo" class="logo-inner">
                     </div>
-                    <h1 class="logo-text">ISEREOO</h1>
+                    <h1 class="logo-text">nsere<span>oo</span></h1>
                 </div>
-                <nav class="expanded-nav">
-                    <button class="nav-btn" id="careers-nav-accueil">Accueil</button>
-                    <button class="nav-btn" id="careers-nav-tests">Tests</button>
-                    <button class="nav-btn active">Métiers</button>
-                    <button class="nav-btn" id="careers-nav-offres">Offres</button>
-                    <button class="nav-btn" id="careers-nav-apprendre">Apprendre</button>
+               <nav class="nav-buttons">
+                    <button id="home-btn" class="nav-btn" onclick="window.location.href='1index.html'">
+                        À propos</button>
+                    <button id="connection-btn" class="nav-btn active">
+                        Tests</button>
+                    <button id="offers-btn" class="nav-btn" onclick="window.location.href='5index.html'">
+                        Offres</button>
+                    <button id="metiers-btn" class="nav-btn" onclick="window.location.href='6index.html'">
+                        Métiers</button>
+                    <button id="resources-btn" class="nav-btn" onclick="window.location.href='7index.html'">
+                        Ressources</button>
                 </nav>
             </div>
-        </header>
+    </header>
 
         <!-- Main Careers Content -->
         <main class="careers-main">
@@ -45,45 +48,32 @@
                     </button>
 
                     <div class="careers-display-area">
-                        <div class="careers-header-box">
-                            <h3>Métiers</h3>
-                        </div>
+                        
                        
                         <div class="careers-content-area">
                             <div class="career-item active" data-career="tech">
-                                <h4>Développeur Web</h4>
-                                <p>Créez des sites web et applications interactives en utilisant les dernières technologies.</p>
-                                <div class="career-skills">
-                                    <span class="skill-tag">HTML/CSS</span>
-                                    <span class="skill-tag">JavaScript</span>
-                                    <span class="skill-tag">React</span>
-                                </div>
+                                <h4 class="io">Développeur Web</h4>
+                                <p>Rôle principal : Gérer et animer la présence en ligne d’une marque ou d’une entreprise sur les réseaux sociaux.</p>
+                                <p> Missions : Créer du contenu engageant, répondre aux commentaires et messages, surveiller la réputation de la marque, 
+                                    analyser les performances des publications et élaborer des stratégies pour augmenter la visibilité et l’engagement.</p>
+                                   <p> Compétences : Communication digitale, créativité, maîtrise des réseaux sociaux, analyse de données, rédaction.</p>
+                                
                             </div>
                             
                             <div class="career-item" data-career="design">
-                                <h4>Designer UX/UI</h4>
+                                <h4 class="io">Designer UX/UI</h4>
                                 <p>Concevez des expériences utilisateur intuitives et des interfaces visuellement attrayantes.</p>
-                                <div class="career-skills">
-                                    <span class="skill-tag">Figma</span>
-                                    <span class="skill-tag">Photoshop</span>
-                                    <span class="skill-tag">Prototypage</span>
-                                </div>
+                                
                             </div>
                             
                             <div class="career-item" data-career="marketing">
-                                <h4>Marketing Digital</h4>
+                                <h4 class="io">Marketing Digital</h4>
                                 <p>Développez des stratégies marketing innovantes pour promouvoir les marques en ligne.</p>
-                                <div class="career-skills">
-                                    <span class="skill-tag">SEO</span>
-                                    <span class="skill-tag">Analytics</span>
-                                    <span class="skill-tag">Social Media</span>
-                                </div>
+                                
                             </div>
                         </div>
 
-                        <div class="careers-descriptions-box">
-                            <h3>Descriptions</h3>
-                        </div>
+                        
                     </div>
 
                     <button class="careers-nav-arrow right" id="careers-next">
@@ -96,5 +86,13 @@
         </main>
     </div>
     <script src="6js.js"></script>
+    <footer>
+    <div class="socials">
+      <a href="#">in</a>
+      <a href="#">f</a>
+      <a href="#">✉</a>
+    </div>
+    <p>© 2025 INSEREOO — Tous droits réservés | Développé avec passion pour l’orientation des jeunes</p>
+  </footer>
 </body>
 </html>
